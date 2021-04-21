@@ -1,0 +1,29 @@
+.search_top {
+    padding: 15px 0;
+    box-shadow: 0 5px 5px #b5b5b5;
+}
+
+.search_bar {
+    display: flex; 
+    width: 95%; margin: auto;
+}
+
+.search_back {
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.search_input {
+    height: 100%; width: 100%;
+    border: none; outline: none;
+    font-size: 1.3rem;
+}
+
+.search_response {
+    padding: 50px;
+    text-align: center;
+}

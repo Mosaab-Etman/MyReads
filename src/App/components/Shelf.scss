@@ -1,0 +1,14 @@
+.shelf {
+    padding: 20px 0;
+    &:nth-child(even) {background-color: rgb(228, 228, 228);}
+    
+}
+
+.shelf_header {
+    padding: 25px 0 5px;
+    color: rgb(0, 0, 0);
+}
+
+.shelf_header-hr {
+    margin: 0 0 50px;
+}
