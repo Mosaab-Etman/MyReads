@@ -26,8 +26,11 @@ const Search = () => {
     const rendureBooks = () => {
         if (books) {
             return books.map(book => {
-                return book.imageLinks && <div className="col-sm-4 col-md-3 col-lg-2">
-                    <Book book={book} key={book.id}/></div>
+                return (
+                    <div className="col-sm-4 col-md-3 col-lg-2" key={book.id}>
+                        <Book book={book} key={book.id}/>
+                    </div>
+                )
             }) 
         }
         return <p className="search_error">{notFound}</p>  

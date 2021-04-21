@@ -17,16 +17,15 @@ const Menu = ({bookID}) => {
             setBookShelf(book.shelf)
         })
 
+        const closeMenu = () => setOpen(!open)
+        
         // Close Dropdown Menu on window Click 
-        window.addEventListener('click', () => setOpen(false))
+        window.addEventListener('click', closeMenu)
 
-        // CleanUp the event of closing dropdown on window click
-        return window.removeEventListener('click', () => setOpen(false))
-
+        return window.removeEventListener('click', closeMenu)
     // eslint-disable-next-line
     }, [])
 
-    
     // Open and Close Dropdown Menu on Icon Click
     const onIconClick = e => {
         e.stopPropagation();

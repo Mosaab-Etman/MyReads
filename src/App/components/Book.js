@@ -16,7 +16,7 @@ const Book = ({book}) => {
         <div className='col'>
             <div key={book.id} className="book">
                 <div className="book_img-wrapper">
-                    <img className="book_img" src={book.imageLinks.thumbnail} alt="book"/>
+                    <img className="book_img" src={book.imageLinks ? book.imageLinks.thumbnail : './assets/book-placeholder.png'} alt="book"/>
                     <Menu bookID={book.id}/>
                 </div>
                 <h6 className="book_header">{book.title}</h6>
